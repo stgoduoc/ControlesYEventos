@@ -16,7 +16,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".EventoTextChanged" />
-        <activity android:name=".MenuContextual"></activity>
+        <activity android:name=".MenuContextual" />
+        <activity android:name=".EventoTouchActivity" />
+        <activity android:name=".ControlesActivity"></activity>
     </application>
 
 </manifest>

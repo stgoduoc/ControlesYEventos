@@ -44,14 +44,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View view) {
         Log.v("onClick:", "View ID: "+view.getId());
-        Log.v("onClick:", "btn1 View ID: "+R.id.btnTextChanged);
-        Log.v("onClick:", "btn2 View ID: "+R.id.btnMenuContextual);
         switch (view.getId()) {
             case R.id.btnTextChanged:
                 goToActivity(EventoTextChanged.class);
                 break;
             case R.id.btnMenuContextual:
                 goToActivity(MenuContextual.class);
+                break;
+            case R.id.btnControles:
+                goToActivity(ControlesActivity.class);
                 break;
             default:
                 break;
