@@ -16,12 +16,21 @@
 
 
         <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Old Button"
+            android:onClick="onClickButton"
+            android:id="@+id/button2" />
+
+        <Button
             android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@color/colorAccent"
             android:padding="10dp"
             android:text="New Button"
+            android:onClick="onClickButton"
+            android:layout_marginBottom="20dp"
             android:textSize="20dp" />
 
         <RadioGroup
@@ -161,21 +170,23 @@
             android:inputType="textPersonName"
             android:text="Name" />
 
+        <!-- EMS: ancho del EditText, layout_width debe ser wrap_content -->
         <EditText
             android:id="@+id/editText5"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Password"
-            android:inputType="textPassword" />
+            android:ems="6"
+            android:hint="Pass (4 digits)"
+            android:inputType="numberPassword"
+            android:maxLength="4" />
 
         <EditText
             android:id="@+id/editText6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Numer Password"
-            android:inputType="numberPassword" />
+            android:hint="Password"
+            android:inputType="textPassword" />
 
         <EditText
             android:id="@+id/editText7"
@@ -184,6 +195,14 @@
             android:ems="10"
             android:hint="micorreo@hotmail.com"
             android:inputType="textEmailAddress" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:lines="3"
+            android:ems="10"
+            android:id="@+id/editText3" />
 
     </LinearLayout>
 </ScrollView>

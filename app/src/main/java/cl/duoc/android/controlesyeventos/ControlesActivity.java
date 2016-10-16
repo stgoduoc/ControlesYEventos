@@ -2,6 +2,7 @@ package cl.duoc.android.controlesyeventos;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.CompoundButton;
 import android.widget.RatingBar;
@@ -87,6 +88,12 @@ public class ControlesActivity extends AppCompatActivity {
                 tvRating.setText(s);
             }
         });
+    }
+
+    // Para ejecutar a través de XML con onClick
+    public void onClickButton(View v) {
+        Log.v("manejoEvento()", "Se ha llamado a manejoEvento()");
+        mostrarToast(String.format("Has pinchado el elemento con ID:%s", v.getId() ));
     }
 
     private void mostrarToast(String s) {
